@@ -99,6 +99,7 @@ public class Ex01 {
 			case 4:
 				System.out.println("검색입니다");
 				System.out.print(">이름 :");
+				String ss = sc.nextLine();
 				String searchName = sc.nextLine();
 
 				for (int i = 0; i < list.size(); i++) {
@@ -110,9 +111,9 @@ public class Ex01 {
 					} catch (Exception e) {
 						continue;
 					}
-
+					
+					
 				}
-				System.out.println("??");
 				break;
 			case 5:
 				System.out.println("종료입니다");
