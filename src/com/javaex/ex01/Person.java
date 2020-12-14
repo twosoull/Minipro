@@ -6,18 +6,18 @@ public class Person {
 	private String name;
 	private String hp;
 	private String company;
-	
+	private int number;
 	//constructor
 	
 	public Person(String name, String hp, String company) {
-		
+		this();
 		this.name = name;
 		this.hp = hp;
 		this.company = company;
 	}
 
 	public Person() {
-		
+		number= 0;
 	}
 
 	//method g/s
@@ -44,11 +44,14 @@ public class Person {
 	public void setCompany(String company) {
 		this.company = company;
 	}
+	public void setNumber(int number) {
+		this.number+= number;
+	}
 	
 	//method
 	
 	public void draw() {
-		System.out.println(name + "   " + hp + "     "+ company);
+		System.out.println(number +".    "+name + "   " + hp + "     "+ company);
 		
 	}
 	@Override
