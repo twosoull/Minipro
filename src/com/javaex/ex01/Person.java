@@ -56,7 +56,7 @@ public class Person {
 	}
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", hp=" + hp + ", company=" + company + "]";
+		return name + "   " + hp + "     "+ company;
 	}
 	
 	

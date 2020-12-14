@@ -40,7 +40,7 @@ public class Ex01 {
 		while (power) {
 
 			// 정보의 카운트
-			int number = 1;
+			
 			// Output
 			OutputStream os = new FileOutputStream("C:\\javaStudy\\Io\\PhoneDB.txt");
 			OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8");
@@ -65,9 +65,10 @@ public class Ex01 {
 				System.out.println("<1.리스트>");
 
 				for (int i = 0; i < list.size(); i++) {
-					System.out.print(number + ".    ");
-					list.get(i).draw();
-					number++;
+					
+					System.out.println((list.indexOf(list.get(i))+1)+".   "
+							+list.get(i).toString());
+					
 				}
 				br.close();
 				// Input end
@@ -106,9 +107,11 @@ public class Ex01 {
 					try {
 						int a = list.get(i).getName().indexOf(searchName);
 						if (a > 0) {
-							list.get(i).draw();
+							System.out.println((list.indexOf(list.get(i))+1)+".   "
+									+list.get(i).toString());
 						}
 					} catch (Exception e) {
+						
 						continue;
 					}
 					
