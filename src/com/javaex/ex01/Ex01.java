@@ -65,7 +65,7 @@ public class Ex01 {
 				System.out.println("<1.리스트>");
 
 				for (int i = 0; i < list.size(); i++) {
-					list.get(i).setNumber(number);
+					System.out.print(number + ".    ");
 					list.get(i).draw();
 					number++;
 				}
