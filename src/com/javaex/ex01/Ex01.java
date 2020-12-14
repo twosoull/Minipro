@@ -98,7 +98,7 @@ public class Ex01 {
 				System.out.println("[삭제되었습니다.]");
 				break;
 			case 4:
-				System.out.println("검색입니다");
+				System.out.println("<4.검색>");
 				System.out.print(">이름 :");
 				String ss = sc.nextLine();
 				String searchName = sc.nextLine();
@@ -106,7 +106,7 @@ public class Ex01 {
 				for (int i = 0; i < list.size(); i++) {
 					try {
 						int a = list.get(i).getName().indexOf(searchName);
-						if (a > 0) {
+						if (a != -1 ) {
 							System.out.println((list.indexOf(list.get(i))+1)+".   "
 									+list.get(i).toString());
 						}
